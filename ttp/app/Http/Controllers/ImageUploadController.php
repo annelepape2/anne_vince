@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ImageUploadController extends Controller
 {
@@ -30,6 +31,7 @@ class ImageUploadController extends Controller
         
         $imageName = time().'.'.request()->image->getClientOriginalExtension();
         request()->image->move(public_path('images'), $imageName);
+        Storage::put('img', 'storage/app/public');
 
         return back()
             ->with('success','You have successfully upload image.')
