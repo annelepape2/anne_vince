@@ -21,8 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Storage::disk('local')->put('file.txt', 'Contents');
 
-Route::get('image-upload',['as'=>'image.upload','uses'=>'ImageUploadController@imageUpload']);
-Route::post('image-upload',['as'=>'image.upload.post','uses'=>'ImageUploadController@imageUploadPost']);
 
 Route::get('image-gallery', 'ImageGalleryController@index');
 Route::post('image-gallery', 'ImageGalleryController@upload');
