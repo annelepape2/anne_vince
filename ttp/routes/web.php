@@ -25,3 +25,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('image-gallery', 'ImageGalleryController@index');
 Route::post('image-gallery', 'ImageGalleryController@upload');
 Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
+
+Route::get('/themes', 'GalleryThemeController@index');
+Route::get('/themes/create', 'GalleryThemeController@create');
