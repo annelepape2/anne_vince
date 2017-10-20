@@ -34,7 +34,7 @@ class ImageUploadController extends Controller
         Storage::put('img', 'storage/app/public');
 
         return back()
-            ->with('success','You have successfully upload image.')
+            ->with('Bravo','L\'image est bien téléchargé.')
             ->with('image',$imageName);
     }
 
