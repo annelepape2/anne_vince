@@ -8,13 +8,7 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 25px;
-  font-family: 'Raleway', 'arial';
-  font-weight: 100;
-}
+
 
 @media screen and (max-width: 1300px) {
   body {
@@ -114,3 +108,28 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+.section-welcome {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: black;
+  background-image: url("../../../public/images/giphy-downsized-large.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.h1welcome {
+  margin-top:0px;
+}
+
+
+
+
+
+
+
