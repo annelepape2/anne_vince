@@ -27,4 +27,6 @@ Route::post('image-gallery', 'ImageGalleryController@upload');
 Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
 
 Route::get('/themes', 'GalleryThemeController@index');
-Route::get('/themes/create', 'GalleryThemeController@create');
+Route::get('/themes/nature', 'NatureThemeController@index');
+Route::get('/themes/sport', 'SportThemeController@index');
+Route::get('/themes/mode', 'ModeThemeController@index');

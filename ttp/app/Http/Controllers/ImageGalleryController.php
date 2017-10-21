@@ -22,11 +22,14 @@ class ImageGalleryController extends Controller
         $input['image'] = time().'.'.$request->image->getClientOriginalExtension();
         $request->image->move(public_path('images'), $input['image']);
         $input['title'] = $request->title;
-        ImageGallery::create($input);
+        $input['theme'] = $request->theme;
+        ImageGallery::create($input) && ModeTheme::create($input);
+
 
         return back()
             ->with('Bravo','L\'image est bien téléchargé.');
     }
+
 
     public function destroy($id)
     {
