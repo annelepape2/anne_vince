@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\isAdmin;
 use App\User;
-use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Image;
 
 
 class UserController extends Controller
@@ -57,7 +57,7 @@ class UserController extends Controller
     {
         $user = User::find($id);
 
-        $user->isEnzo = $request->update;
+        $user->isAdmin = $request->update;
         $user->save();
 
         return redirect()->route('admin', [$user->id])->with('warning', 'Admin modifié');
