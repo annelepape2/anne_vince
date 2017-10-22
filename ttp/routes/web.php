@@ -25,3 +25,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('image-gallery', 'ImageGalleryController@index');
 Route::post('image-gallery', 'ImageGalleryController@upload');
 Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
+Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
+
+Route::get('/themes', 'GalleryThemeController@index');
+Route::get('/themes/nature', 'NatureThemeController@index');
+Route::get('/themes/sport', 'SportThemeController@index');
+Route::get('/themes/mode', 'ModeThemeController@index');
+
+
+Route::post('profile', 'UserController@update_avatar')->middleware('isAdmin');
+
+
+Route::get('profile', [
+    'as' => 'profile',
+    'uses' => 'UserController@profile'
+])->middleware('isAdmin');

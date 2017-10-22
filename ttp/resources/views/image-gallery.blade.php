@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+@section('content')
+
+        <!DOCTYPE html>
 <html>
 <head>
     <title>Gallerie d'images</title>
@@ -32,6 +35,7 @@
 </head>
 
 <body>
+@if(Auth::check())
 <div class="container">
     <h3>Gallerie d'images</h3>
     <form action="{{ url('image-gallery') }}" class="form-image-upload" method="POST" enctype="multipart/form-data">
@@ -95,6 +99,9 @@
     </div> <!-- row / end -->
 </div> <!-- container / end -->
 
+@else
+@endif
+@endsection
 
 </body>
 
