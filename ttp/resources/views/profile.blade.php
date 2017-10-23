@@ -13,12 +13,12 @@
                             <div class="">
                                 <div class="profile-img">
 
-                                  <img class="profile-avatar" src="/uploads/avatars/{{ $user->avatar }}"
+                                 <img class="profile-avatar" src="/uploads/avatars/{{ $user->avatar }}"
                                          style="width: 150px;height: 150px;float: left;border-radius: 50%;margin-right: 25px;"
                                          width="150" height="150">
                                 </div>
                             </div>
-                            <form enctype="multipart/form-data" action=" {{ route('profile', $user->id) }} "
+                            <form enctype="multipart/form-data" action=" {{ route('profile',$user->id)}}"
                                   method="POST" style="margin-top:100px;width:120px;">
                                 <input type="file" name="avatar">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">

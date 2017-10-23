@@ -38,3 +38,5 @@ $(window).load(function(){
     })
     $('.item > a').removeAttr('href')
 })
+
+

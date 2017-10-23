@@ -8456,7 +8456,6 @@ a:hover {
   width: 100%;
   text-align: center;
   color: black;
-  background-image: url(/images/giphy-downsized-large.gif?3364013cf2118f4d5d66f66c78afc359);
   background-size: cover;
 }
 
@@ -8536,7 +8535,7 @@ a:hover {
   box-shadow: inset 80px 80px 0 #985f0d;
 }
 
-.logo {
-  background-image: url(/images/giphy-downsized-large.gif?3364013cf2118f4d5d66f66c78afc359);
+.bg-info {
+  background-color: #a61717;
 }
 

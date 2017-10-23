@@ -115,7 +115,6 @@ a:hover {
   width: 100%;
   text-align: center;
   color: black;
-  background-image: url("../../../public/images/giphy-downsized-large.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -206,9 +205,13 @@ $rr-width:          50%;
 
 .logo {
 
-  background-image: url("../../../public/images/giphy-downsized-large.gif");
 
 
+}
+
+
+.bg-info {
+  background-color:#a61717;!important;
 }
 
 

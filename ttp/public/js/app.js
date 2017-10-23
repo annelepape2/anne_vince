@@ -42759,7 +42759,7 @@ if (false) {
 /* 42 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n  background-color:#a61717;!important;\n                          ^\n      Invalid CSS after \"...-color:#a61717;\": expected \"}\", was \"!important;\"\n      in /Users/quentinlagadic/Sites/anne_vince/ttp/resources/assets/sass/app.scss (line 214, column 28)\n    at runLoaders (/Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.<anonymous> (/Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/async/dist/async.js:2244:31)\n    at Object.callback (/Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/async/dist/async.js:906:16)\n    at options.error (/Users/quentinlagadic/Sites/anne_vince/ttp/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ })
 /******/ ]);
